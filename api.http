@@ -1,0 +1,34 @@
+
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+  "profile" : "fotito2.com",
+  "content" : "Este será el segundo comentario",
+  "date": "29 de Marzo"
+}
+
+###
+GET http://localhost:3000/comments
+
+###
+
+POST http://localhost:3000/comentarios 
+Content-Type: application/json
+
+{
+  "name": "Carlos",
+  "date" : "30 de Octubre",
+  "content" : "Este es un comentario nuevo"
+}
+
+###
+PUT http://localhost:3000/comments/3aea47b8-302d-402e-967e-dc80d41a09d2
+Content-Type: application/json
+
+{
+  "profile": "fotitonueva.com"
+}
+
+###
+DELETE http://localhost:3000/comments/3aea47b8-302d-402e-967e-dc80d41a09d2
