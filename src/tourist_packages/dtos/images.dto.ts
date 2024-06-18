@@ -1,4 +1,4 @@
-import { PartialType } from '@nestjs/mapped-types';
+import { PartialType } from '@nestjs/swagger';
 import { IsString, IsUrl, IsNotEmpty } from 'class-validator';
 
 export class CreateImagesDto {

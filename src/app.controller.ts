@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'Hola Mundo!';
+    return this.appService.getHello();
   }
 
   @Get('nuevo')
@@ -45,5 +45,10 @@ export class AppController {
     @Param('productId') productId: string,
   ) {
     return `categories ${categoryId} and product ${productId}`;
+  }
+
+  @Get('tasks')
+  tasks() {
+    return this.appService.getTasks();
   }
 }

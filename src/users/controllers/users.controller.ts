@@ -10,12 +10,15 @@ import {
 } from '@nestjs/common';
 import { CreateUsersDtos, UpdateUsersDtos } from '../dtos/users.dtos';
 import { UsersService } from '../services/users.service';
+import { ApiTags, ApiOperation } from '@nestjs/swagger';
 
+@ApiTags('users')
 @Controller('users')
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
   @Get()
+  @ApiOperation({ summary: 'List all Users' })
   getUsers() {
     return this.usersService.findAllUsers();
   }

@@ -1,34 +1,85 @@
 
+//PAQUETES TURISTICOS
+###
+GET http://localhost:3000/tourist-packages
+###
+POST http://localhost:3000/tourist-packages
+Content-Type: application/json
+
+{
+    "supplier": "Cancun Tours",
+    "payment_type": "Credito"
+}
+###
+PUT http://localhost:3000/tourist-packages/eddf75b7-9e64-4c42-870b-2258488a8adc
+Content-Type: application/json
+
+{
+  "payment_type": "Credito"
+}
+
+###
+DELETE http://localhost:3000/tourist-packages/eddf75b7-9e64-4c42-870b-2258488a8adc
+//COMENTARIOS
+###
+GET http://localhost:3000/comments
+###
 POST http://localhost:3000/comments
 Content-Type: application/json
 
 {
-  "profile" : "fotito2.com",
-  "content" : "Este será el segundo comentario",
-  "date": "29 de Marzo"
+    "supplier": "Cancun Tours",
+    "payment_type": "Credito"
 }
-
 ###
-GET http://localhost:3000/comments
-
-###
-
-POST http://localhost:3000/comentarios 
+PUT http://localhost:3000/comments/eddf75b7-9e64-4c42-870b-2258488a8adc
 Content-Type: application/json
 
 {
-  "name": "Carlos",
-  "date" : "30 de Octubre",
-  "content" : "Este es un comentario nuevo"
+  "payment_type": "Credito"
 }
 
 ###
-PUT http://localhost:3000/comments/3aea47b8-302d-402e-967e-dc80d41a09d2
+DELETE http://localhost:3000/comments/eddf75b7-9e64-4c42-870b-2258488a8adc
+//IMAGENES
+###
+GET http://localhost:3000/images
+###
+POST http://localhost:3000/images
 Content-Type: application/json
 
 {
-  "profile": "fotitonueva.com"
+    "supplier": "Cancun Tours",
+    "payment_type": "Credito"
+}
+###
+PUT http://localhost:3000/images/eddf75b7-9e64-4c42-870b-2258488a8adc
+Content-Type: application/json
+
+{
+  "payment_type": "Credito"
 }
 
 ###
-DELETE http://localhost:3000/comments/3aea47b8-302d-402e-967e-dc80d41a09d2
+DELETE http://localhost:3000/images/eddf75b7-9e64-4c42-870b-2258488a8adc
+//ITINERARIOS
+###
+GET http://localhost:3000/itineraries
+###
+POST http://localhost:3000/itineraries
+Content-Type: application/json
+
+{
+    "supplier": "Cancun Tours",
+    "payment_type": "Credito"
+}
+###
+PUT http://localhost:3000/itineraries/eddf75b7-9e64-4c42-870b-2258488a8adc
+Content-Type: application/json
+
+{
+  "payment_type": "Credito"
+}
+
+###
+DELETE http://localhost:3000/itineraries/eddf75b7-9e64-4c42-870b-2258488a8adc
